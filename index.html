@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Převod teploty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Převod teploty</h1>
+    <form id="temperatureForm">
+      <label for="inputValue">Zadejte hodnotu:</label>
+      <input type="number" id="inputValue" placeholder="Zadejte teplotu" required>
+
+      <label for="fromUnit">Z:</label>
+      <select id="fromUnit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+
+      <label for="toUnit">Na:</label>
+      <select id="toUnit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+
+      <button type="submit">Převést</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
